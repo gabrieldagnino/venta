@@ -1,0 +1,93 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.producto h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.producto button {
+    background-color: #FFB800;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.producto button:hover {
+    background-color: #e6a600;
+}
+
+/* Estilos para la vista del carrito */
+.carrito-seccion {
+    margin-top: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.item-carrito {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.item-carrito button {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+.btn-eliminar {
+    margin-left: 10px;
+    background: #ff4d4d !important;
+    color: white;
+    border: none !important;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.btn-eliminar:hover {
+    background: #cc0000 !important;
+}
